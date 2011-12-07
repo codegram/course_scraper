@@ -19,7 +19,9 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_runtime_dependency "capybara"
+  s.add_runtime_dependency "capybara-webkit"
   s.add_development_dependency "vcr"
+  s.add_development_dependency "webmock"
   s.add_development_dependency "mocha"
   s.add_development_dependency "minitest"
 end
