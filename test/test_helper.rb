@@ -1,0 +1,6 @@
+gem 'minitest'
+require 'minitest/spec'
+require 'minitest/autorun'
+require 'mocha'
+require 'vcr'
+require_relative '../lib/course_scraper'
