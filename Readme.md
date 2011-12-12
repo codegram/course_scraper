@@ -9,18 +9,33 @@ In your Gemfile:
 
     gem 'course_scraper', git: 'git://github.com/codegram/course_scraper'
 
-# Usage
+## Usage
 
-    require 'course_scraper'
-    categories = CourseScraper::Catalonia.scrape
+```ruby
+require 'course_scraper'
+catalan_categories = CourseScraper::Catalonia.scrape
 
-    categories.each do |category|
-      category.name
-      # => "Administracio"
-      category.courses.each do |course|
-        course.name
-        # => "Transport"
-        course.type
-        # => :medium
-      end
-    end
+catalan_categories.each do |category|
+  category.name
+  # => "Administracio"
+  category.courses.each do |course|
+    course.name
+    # => "Transport"
+    course.type
+    # => :medium
+  end
+end
+
+spanish_categories = CourseScraper::Spain.scrape
+
+spanish_categories.each do |category|
+  category.name
+  # => "Administracion"
+  category.courses.each do |course|
+    course.name
+    # => "Transporte"
+    course.type
+    # => :medium
+  end
+end
+```
