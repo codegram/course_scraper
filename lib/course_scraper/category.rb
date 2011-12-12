@@ -2,7 +2,7 @@ module CourseScraper
   # Public: A Category of vocational courses that contains them.
   #
   class Category
-    attr_reader :names, :courses
+    attr_reader :name, :courses
 
     # Public: Initializes a new Category.
     #
